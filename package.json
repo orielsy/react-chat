@@ -1,0 +1,70 @@
+{
+  "name": "react-chat",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+    "scripts": {
+    "compile-api": "babel -d api/ api-src/",
+    "start-api": "node ./api/api.js",
+    "start": "node server.js --env=dev"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/orielsy/react-chat.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/orielsy/react-chat/issues"
+  },
+  "homepage": "https://github.com/orielsy/react-chat#readme",
+  "devDependencies": {
+    "babel-cli": "^6.24.1",
+    "babel-core": "^6.0.0",
+    "babel-eslint": "^6.0.0",
+    "babel-loader": "^6.0.0",
+    "babel-plugin-transform-runtime": "^6.23.0",
+    "babel-polyfill": "^6.3.14",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-react": "^6.0.15",
+    "babel-preset-stage-0": "^6.24.1",
+    "bower-webpack-plugin": "^0.1.9",
+    "css-loader": "^0.23.0",
+    "eslint": "^3.19.0",
+    "eslint-config-airbnb": "^15.0.1",
+    "eslint-loader": "^1.7.1",
+    "eslint-plugin-jsx-a11y": "^5.0.3",
+    "eslint-plugin-react": "^7.0.1",
+    "file-loader": "^0.9.0",
+    "glob": "^7.0.0",
+    "grunt": "^1.0.1",
+    "grunt-contrib-compass": "^1.1.1",
+    "grunt-contrib-watch": "^1.0.0",
+    "isparta-instrumenter-loader": "^1.0.0",
+    "istanbul": "^0.4.5",
+    "minimist": "^1.2.0",
+    "null-loader": "^0.1.1",
+    "open": "0.0.5",
+    "phantomjs-prebuilt": "^2.0.0",
+    "react-addons-test-utils": "^15.0.0",
+    "react-hot-loader": "^1.2.9",
+    "style-loader": "^0.13.0",
+    "url-loader": "^0.5.6",
+    "webpack": "^1.12.0",
+    "webpack-dev-server": "^1.12.0"
+  },
+  "dependencies": {
+    "babel-runtime": "^6.23.0",
+    "core-js": "^2.0.0",
+    "cors": "^2.8.3",
+    "express": "^4.15.3",
+    "http": "0.0.0",
+    "normalize.css": "^4.0.0",
+    "path": "^0.12.7",
+    "react": "^15.0.0",
+    "react-dom": "^15.0.0",
+    "socket.io": "^2.0.2",
+    "socket.io-client": "^1.4.8"
+  }
+}
+

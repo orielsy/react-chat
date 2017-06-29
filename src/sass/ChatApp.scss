@@ -1,0 +1,79 @@
+$chat-blue: #3497d6;
+$chat-yellow: #f0cb35;
+.container {
+  display: flex;
+  flex-direction: column;
+}
+
+.messages {
+  overflow-y: scroll;
+  overflow-x: hidden;
+  flex-grow: 1;
+  padding: 20px;
+  text-align: left;
+}
+
+.chat-input {
+  position: relative;
+  overflow: hidden;
+  padding: 0 40px;
+  flex-shrink: 0;
+
+  input[type="text"] {
+    display: block;
+    margin-left: -20px;
+    margin-right: -20px;
+    padding-right: 60px;
+    width: calc(100% - 40px);
+  }
+
+  input[type="submit"] {
+    background: url('../img/plane.png');
+    background-size: contain;    
+    background-repeat: no-repeat;
+    padding: 0;
+    margin: 0;
+    font-size: 0;
+    height: 55px;
+    width: 55px;
+    position: absolute;
+    right: 30px;
+    bottom: 18px;
+  }
+}
+
+.message.from-me .username {
+  display: none;
+}
+
+.message.from-me {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 5px;
+}
+
+.message.from-me .message-body {
+  background-color: $chat-blue;
+  color: white;
+}
+
+.message {
+  margin-bottom: 20px;
+}
+.message-body {
+  max-width: 80%;
+  display: inline-block;
+  padding: 15px;
+  background-color: #eee;
+  border: 1px;
+  border-radius: 30px;
+  padding-right: 50px;
+}
+
+.username {
+  font-weight: bold;
+  font-size: 0.9rem;
+  color: #999;
+  margin-bottom: 5px;
+}
+
